@@ -2,7 +2,6 @@ import 'package:bowling_application/Screens/Welcome/welcome_screen.dart';
 import 'package:bowling_application/constants.dart';
 import 'package:flutter/material.dart';
 
-
 void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
