@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../components/already_have_an_account_acheck.dart';
 import '../../../constants.dart';
 import '../../Login/login_screen.dart';
+import '../../Onboarding/onboarding_form.dart'; // Import the OnboardingForm widget
 
 class SignUpForm extends StatelessWidget {
   const SignUpForm({
@@ -44,9 +45,16 @@ class SignUpForm extends StatelessWidget {
           ),
           const SizedBox(height: defaultPadding / 2),
           ElevatedButton(
-            onPressed: () {},
-            child: Text("Sign Up".toUpperCase()),
-          ),
+           onPressed: () {
+            // Navigate to the onboarding form page
+          Navigator.push(
+           context,
+           MaterialPageRoute(builder: (context) => OnboardingForm()),
+    );
+  },
+  child: Text("Sign Up".toUpperCase()),
+),
+
           const SizedBox(height: defaultPadding),
           AlreadyHaveAnAccountCheck(
             login: false,
