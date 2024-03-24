@@ -1,3 +1,4 @@
+import 'package:bowling_application/Screens/HomeScreen/components/App_bar.dart';
 import 'package:bowling_application/Screens/Profile/components/card.dart';
 import 'package:bowling_application/constants.dart';
 import 'package:flutter/material.dart';
@@ -16,6 +17,7 @@ class Profile extends StatelessWidget {
         leading: IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back)),
         title: const Text('User Profile'),
       ),
+      bottomNavigationBar: AppBarBottom(),
       body: Container(
         padding: EdgeInsets.symmetric(vertical: 16, horizontal: 20),
         child: Column(

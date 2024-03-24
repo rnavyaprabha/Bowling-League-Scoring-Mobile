@@ -1,3 +1,5 @@
+import 'package:bowling_application/Screens/HomeScreen/Home_screen.dart';
+import 'package:bowling_application/Screens/Profile/profile.dart';
 import 'package:bowling_application/Screens/Welcome/welcome_screen.dart';
 import 'package:bowling_application/constants.dart';
 import 'package:flutter/material.dart';
@@ -38,7 +40,7 @@ class MyApp extends StatelessWidget {
               borderSide: BorderSide.none,
             ),
           )),
-      home: const WelcomeScreen(),
+      home: HomeScreen(),
       // home: Text("Welcome to Bowling Application"),
     );
   }
