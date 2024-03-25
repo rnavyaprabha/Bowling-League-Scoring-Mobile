@@ -40,7 +40,7 @@ class MyApp extends StatelessWidget {
               borderSide: BorderSide.none,
             ),
           )),
-      home: HomeScreen(),
+      home: WelcomeScreen(),
       // home: Text("Welcome to Bowling Application"),
     );
   }
